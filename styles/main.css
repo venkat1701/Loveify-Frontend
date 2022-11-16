@@ -1,0 +1,764 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body{
+    background-color: #fff;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+:focus{
+    border: none;
+    outline: none;
+}
+
+/*Website Topic CSS Styles for Light Mode.*/
+
+.website-topic{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 100px;
+}
+
+.website-topic .title-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.website-topic .title-box .title-texts{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.website-topic .title-box .title-texts .title-texts-heading{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.website-topic .title-box .title-texts .title-texts-quote{
+    font-family: 'Abel', serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.website-topic .search-bar {
+    background-color: #eee;
+    padding: 20px;
+    padding-left: 30px;
+    width: 40%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.website-topic .search-bar input{
+    width: 90%;
+    background: transparent;
+    font-family: 'Abel', serif;
+    border: none;
+    font-size: 15px;
+    caret-color: #47d9bf;
+    
+}
+
+/*Website Topic CSS Styles for Light Mode.*/
+
+
+/*Navigation Ribbon CSS Styles for Light Mode.*/
+.navigation{
+    width: 100%;
+    padding: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #eee;
+}
+
+.navigation .endpoints{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: left;
+}
+
+.navigation .endpoints li{
+    font-family: 'Abel', serif;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.navigation .endpoints li:hover{
+    color: #47d9bf;
+    cursor: pointer;
+}
+/*Navigation Ribbon CSS Styles for Light Mode.*/
+
+
+/*Carousel CSS Styles for Light Mode.*/
+.splide{
+    width: 100%;
+}
+
+.splide__slide .gallery{
+    width: 100%;
+    background-color: #515151;
+    background-image: url('../images/page1_slide01.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 150px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    gap: 40px;
+}
+
+.splide__slide  #gal1{
+    background-image: url('../images/page1_slide01.jpg');
+}
+
+.splide__slide  #gal2{
+    background-image: url('../images/page1_slide02.jpg');
+}
+
+.splide__slide  #gal3{
+    background-image: url('../images/page1_slide03.jpg');
+}
+
+
+.splide__list .gallery h2{
+    width: 50%;
+    text-align: right;
+    font-family: 'Josefin Slab';
+    font-size: 96px;
+    color: #fff;
+}
+
+.splide__list .gallery h3{
+    font-family: 'Abel';
+    font-size: 25px;
+    width: 50%;
+    text-align: right;
+    color: #ddd;
+    font-weight: 300;
+}
+
+/*Carousel CSS Styles for Light Mode.*/
+
+
+/*Quote CSS Styles for Light Mode*/
+.quote{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px;
+}
+
+.quote h1{
+    font-family: 'Josefin Slab';
+    font-size: 100px;
+    font-weight: 600;
+    color: #47d9bf;
+}
+.quote h2{
+    font-family: 'Abel';
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+/*Quote CSS Styles for Light Mode*/
+
+/*Card CSS Styles for Light Mode*/
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 150px;
+    gap: 50px;
+    background-color: #efefef;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.cards .card{
+    width: 600px;
+    padding-top: 150px;
+    background-color: #47d9bf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards .card img{
+    position: relative;
+    top: -50px;
+    border-radius: 100px;
+}
+
+.cards .card .card-texts{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    gap: 50px;
+}
+
+.cards .card .card-texts .title{
+    position: relative;
+    text-align: center;
+    top: -40px;
+}
+
+.cards .card .card-texts .title h2{
+    font-family: 'Josefin Slab';
+    font-size: 60px;
+    color: #414141;
+    font-weight: 600;
+}
+
+.cards .card .card-texts .title h3{
+    font-family: 'Abel';
+    font-size: 30px;
+    font-weight: 300;
+    color: #47d9bf;
+}
+
+.cards .card .paragraph{
+    position: relative;
+    top: -40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.cards .card .paragraph p{
+    padding: 20px; 
+    width: 90%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Abel';
+}
+/*Card CSS Styles for Light Mode*/
+
+
+
+/*StartDate CSS Styles for Light Mode*/
+.startdate{
+    width: 100%;
+    background-image: url('../images/page1_parallax01.jpg'), linear-gradient(0deg, rgba(65,65,65,.9) 1%, rgba(65,65,65,0.1) 40%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px;
+    background-blend-mode:multiply;
+    background-attachment: fixed;
+    background-color: #686868;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.startdate .titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.startdate .titles h2{
+    font-family: 'Josefin Slab';
+    font-size: 96px;
+    color: #FFF;
+}
+
+.startdate .titles h3{
+    font-family: 'Abel';
+    font-size: 33px;
+    text-align: center;
+    width: 70%;
+    color: #47d9bf;
+    font-weight: 400;
+}
+
+.startdate .onlinestatus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.startdate .onlinestatus .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.startdate .onlinestatus .card h1{
+    font-family: 'Josefin Slab';
+    font-size: 70px;
+    color: #47d9bf;
+    font-weight: 600;
+}
+
+.startdate .onlinestatus .card h2{
+    font-family: 'Abel';
+    color: #fff;
+}
+
+.startdate .onlinestatus .card h4{
+    font-family: 'Abel';
+    font-size: 20px;
+    color: #47d9bf;
+    width: 80%;
+    font-weight: 400;
+}
+
+.startdate .onlinestatus .card img{
+    border-radius: 30px;
+    padding: 30px;
+    background-color: #FFF;
+
+}
+/*StartDate CSS Styles for Light Mode*/
+
+
+/*Last Added CSS Styles for Light Mode*/
+.lastadded{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px;
+    gap: 40px;
+}
+
+.lastadded .profile{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.lastadded img{
+    width: 150px;
+    border-radius: 100px;
+}
+
+.lastadded .profile h3{
+    font-family: 'Josefin Slab';
+    font-size: 30px;
+    color: #47d9bf;
+}
+
+.lastadded .profile h4{
+    font-family: 'Abel';
+    font-size: 15px;
+    color: #515151;
+}
+/*Last Added CSS Styles for Light Mode*/
+
+/*Coupled CSS Styles for Light Mode*/
+.coupled{
+    width: 100%;
+    padding: 150px;
+    background: url('../images/pictures/image-removebg-preview.png'), linear-gradient(0deg, rgba(113, 112, 112, 0.9) 1%, rgba(116, 111, 111, 0.8) 40%); 
+    background-size: cover;
+    background-position: center;
+    background-clip: padding-box;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+
+.coupled h2{
+    width: 65%;
+    font-family: 'Josefin Slab';
+    color: #fff;
+    font-size: 78px;
+    font-weight: 300;
+}
+/*Coupled CSS Styles for Light Mode*/
+
+
+/*Newsletter CSS Styles for Light Mode.*/
+.newsletter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: #2f353b;
+    padding: 100px;
+    gap: 40px;
+}
+
+.newsletter .texts{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.newsletter .texts .title{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.newsletter .texts .title h2{
+    font-family: 'Josefin Slab';
+    font-size: 50px;
+    color: #fff;
+}
+.newsletter .texts .title img{
+    width: 100px;
+}
+
+.newsletter .texts h4{
+    font-family: 'Abel';
+    font-size: 15px;
+    width: 70%;
+    color:#47d9bf;
+    font-weight: 400;
+}
+
+.newsletter .texts p{
+    width: 70%;
+    font-family: 'Abel';
+    color: #ddd;
+
+}
+
+.newsletter .register{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.newsletter .register .subscribe{
+    display: flex;
+    gap: 20px;
+    width: 220px;;
+    background-color: #505962;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+
+.newsletter .register .subscribe h4{
+    color: #fff;
+    font-family: 'Abel';
+    background-color: #47d9bf;
+    padding: 30px;
+}
+
+.newsletter .register .subscribe img{
+    width: 30px;
+    margin-right: 30px;;
+}
+
+.newsletter .register input{
+    padding: 40px;
+    width: 80%;
+    font-family: 'Abel';
+    caret-color: #47d9bf;
+}
+
+.newsletter .register .subscribe:hover{
+    cursor: pointer;
+}
+.newsletter .register .subscribe:hover > h4{
+    background-color: #111111;
+    cursor: pointer;
+    transition: .9s;
+}
+/*Newsletter CSS Styles for Light Mode.*/
+
+/*Footer CSS Styles for Light Mode*/
+.footer{
+    width: 100%;
+    padding: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #282d32;
+}
+
+.footer .companystuff{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.footer .companystuff .company{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
+
+.footer .companystuff .company .name h2{
+    color: #fff;
+    font-family: 'Josefin Slab';
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.footer .companystuff .company .name h5{
+    font-family: 'Abel';
+    color: #47d9bf;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer .companystuff .policy h6{
+    color: #fff;
+    font-family: 'Abel';
+    font-weight: 400;
+}
+
+.footer .companystuff .policy p{
+    color: #47d9bf;
+    font-family: 'Abel';
+    font-weight: 400;
+}
+
+.footer .socials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer .socials img{
+    background-color: #47d9bf;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 20px;;
+}
+
+.footer .socials img:hover{
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+/*Footer CSS Styles for Light Mode*/
+
+
+
+/*Media Queries for 1080 px*/
+@media screen and (max-width: 1080px) {
+
+    .splide__list .gallery h2{
+        width: 100%;
+    }
+
+    .navigation .endpoints{
+        width: 100%;
+    }
+
+    .startdate .titles h2{
+        font-size: 50px;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .startdate .titles h3{
+        font-size: 30px;
+    }
+
+    .startdate .onlinestatus{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .startdate .onlinestatus .card h1{
+        font-size: 30px;
+    }
+
+    .lastadded{
+        flex-direction: column;
+    }
+
+    .quote h1{
+        font-size: 60px;
+    }
+
+    .quote h2{
+        font-size: 30px;
+    }
+
+    .cards{
+        padding: 10px;
+    }
+
+    .footer{
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .newsletter{
+        flex-direction: column;
+    }
+
+    .newsletter .texts{
+        width: 100%;
+        align-items: center;
+    }
+
+    .newsletter .register{
+        width: 80%;
+        align-items: center;
+    }
+}
+/*Media Queries for 1080 px*/
+
+/*Media Queries for 620px*/
+@media screen and (max-width: 620px){
+
+
+    .website-topic{
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .website-topic .search-bar{
+        width: 100%;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .register input{
+        padding: 5px;
+        width: 100%;
+    }
+
+    .splide__slide .gallery{
+        padding: 10px;
+        height: 400px;
+        justify-content: space-evenly;
+        
+    }
+
+    .splide__slide .gallery h2{
+        text-align: center;
+    }
+
+    .quote{
+        padding: 10px;
+        height: 500px;
+        gap: 30px;
+    }
+
+    .newsletter{
+        padding: 10px;
+    }
+
+    .coupled{
+        margin: auto;
+        padding: 10px;
+    }
+
+    .coupled h2{
+        width: 100%;
+        font-size: 70px;
+        height: 400px;
+        text-align: center;
+    }
+
+    .startdate{
+        padding: 10px;
+    }
+
+    .startdate .onlinestatus{
+        gap: 80px;
+    }
+
+
+    .startdate .titles h2{
+        padding: 40px;
+        text-align: center;
+    }
+
+    .startdate .titles h3{
+        font-size: 25px;
+    }
+
+    .newsletter .texts .title{
+        flex-direction: column;
+    }
+
+    .splide__slide .gallery{
+        align-items: center;
+    }
+
+    .splide__list .gallery h2{
+        width: 100%;
+        font-size: 50px;
+    }
+
+    .splide__list .gallery h3{
+        font-size: 20px;
+        width: 100%;;
+        text-align: center;
+    }
+
+    .cards .card{
+        width: 300px;
+    }
+}
+/*Media Queries for 620px*/
